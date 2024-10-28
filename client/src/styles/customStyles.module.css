@@ -1,0 +1,121 @@
+/* Variables */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #f1c40f;
+  --dark-color: #0d2436;
+  --light-color: #f9fbfe;
+  --font-family: Arial, sans-serif;
+  --font-size: 16px;
+}
+
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  color: var(--dark-color);
+}
+
+/* Typography */
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  color: var(--dark-color);
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+/* Buttons */
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.primary-button {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.primary-button:hover {
+  background-color: var(--secondary-color);
+}
+
+.outline-button {
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+/* Logo */
+.logo {
+  height: 100px;
+  width: 100px;
+}
+
+/* Navigation */
+.nav-item {
+  color: #fff;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+}
+
+/* Banner */
+.banner {
+  background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/foodmunch-banner-bg.png");
+  height: 100vh;
+  background-size: cover;
+}
+
+.banner-heading {
+  color: #fff;
+  font-size: 45px;
+  font-weight: 300;
+}
+
+/* Sections */
+.section {
+  padding: 20px;
+}
+
+.section-heading {
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--dark-color);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .banner-heading {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-heading {
+    font-size: 24px;
+  }
+}
